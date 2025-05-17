@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/Provider";
 import BreadCrumb from "../../BreadCrumb";
+import { Plus, PlusCircle } from "lucide-react";
 
 const Posts = () => {
   const [isDeleted, setIsDeleted] = useState(false);
@@ -77,7 +78,7 @@ const Posts = () => {
               to="/dashboard/posts/create"
               className="bg-indigo-600 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:bg-indigo-700 transition duration-200 shadow-sm w-full sm:w-auto text-center"
             >
-              Add New Post
+            <PlusCircle width={20} height={20}/>
             </Link>
           </div>
 

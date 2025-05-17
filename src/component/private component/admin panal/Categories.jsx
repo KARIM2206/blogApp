@@ -136,7 +136,7 @@ const Categories = () => {
   */
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100 md:ml-64 p-4 sm:p-6 md:p-8">
+    <div className="flex flex-col min-h-screen  bg-gray-100 md:ml-64 p-4 sm:p-6 md:p-8">
       <div className="max-w-full mx-auto">
         <BreadCrumb
           links={[
