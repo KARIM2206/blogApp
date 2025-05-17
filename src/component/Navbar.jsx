@@ -53,6 +53,12 @@ const Navbar = () => {
           ) : (
             <>
               <Link
+                to="/dashboard/posts"
+                className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 transition duration-200"
+              >
+                admin
+              </Link>
+              <Link
                 to="/login"
                 className="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 transition duration-200"
               >
@@ -110,9 +116,20 @@ const Navbar = () => {
                 >
                   Logout
                 </button>
+                 
               </>
             ) : (
               <>
+           
+           <Link
+  to="/dashboard/posts"
+  onClick={() => setIsMenuOpen(false)}
+  className="rounded-lg bg-indigo-600 px-4 py-2 text-sm
+   font-medium text-white hover:bg-indigo-700 focus:outline-none
+    focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition duration-200 text-left"
+>
+  admin
+</Link>
                 <Link
                   to="/login"
                   onClick={() => setIsMenuOpen(false)}
